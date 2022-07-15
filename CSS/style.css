@@ -152,7 +152,7 @@ li {
 /* Hero banner COMMENT*/
 #hero-image {
   height: 944px;
-  background-image: url(./images/cage-gray.PNG);
+  background-image: url(./images/cage-gray.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -529,7 +529,7 @@ select {
 
 /* Banner at top */
 #sched-image {
-  background-image: url(./images/octagon-head.PNG);
+  background-image: url(./images/octagon-head.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
