@@ -1,0 +1,885 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  font-family: "Mukta Vaani", sans-serif;
+  overflow: overlay;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100%;
+}
+
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+p {
+  font-family: "Mukta Vaani", sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Khand", sans-serif;
+  font-size: 100px;
+  letter-spacing: 0.1em;
+  margin-top: 4.4rem;
+}
+
+h3 {
+  text-align: center;
+  font-size: 25px;
+  animation: slideInDown 2s;
+}
+
+/* Navbar COMMENT */
+header {
+  position: fixed;
+  font-family: "Khand", sans-serif;
+}
+
+li {
+  list-style: none;
+  animation: slideInDown 2s;
+}
+
+.navbar a {
+  color: #f5f7f0;
+  text-decoration: none;
+  animation: slideInDown 2s;
+}
+
+.navbar {
+  background-color: transparent;
+  min-height: 70px;
+  padding: 0 24px;
+  letter-spacing: 0.2em;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+}
+
+.navbar[id="grayNav"] {
+  background-color: #262626;
+}
+
+#nav-branding {
+  font-size: 2.3rem;
+  color: #f5cb5c;
+  animation: slideInDown 2s;
+  font-family: "Khand", sans-serif;
+  transition: 0.3s ease;
+}
+
+#nav-branding:hover {
+  color: #f5f7f0;
+}
+
+.nav-link {
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f5cb5c;
+}
+
+/* Nav animation of line COMMENT */
+
+.nav-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f5f7f0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Hamburger icon COMMENT */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #f5f7f0;
+}
+
+/* Hero banner COMMENT*/
+#hero-image {
+  height: 944px;
+  background-image: url(/FrontendProject/images/cage-gray.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-text {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-header {
+  color: #f5f7f0;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0;
+  animation: slideInDown 2s;
+}
+
+#octagon-head {
+  color: #f5cb5c;
+  -webkit-text-stroke: 2px #020305;
+}
+
+#hero-description {
+  color: #f5f7f0;
+  animation: slideInDown 2s;
+}
+
+#exploreButton {
+  margin-top: 3.5em;
+  margin-left: 50em;
+  margin-right: 50em;
+  padding: 1em 5em;
+  display: block;
+  text-decoration: none;
+  font-family: "Mukta Vaani", sans-serif;
+  transition: 0.3s ease;
+  background-color: #f5cb5c;
+  border: 2px solid #020305;
+  color: black;
+  cursor: pointer;
+  animation: slideInDown 2s;
+}
+
+#exploreButton:hover {
+  border: 2px solid #f5cb5c;
+  background-color: transparent;
+  color: #f5f7f0;
+}
+
+.button-style {
+  font-family: "Mukta Vaani", sans-serif;
+  transition: 0.3s ease;
+  border: 2px solid #020305;
+  background-color: #f5cb5c;
+  color: #020305;
+  padding: 1em 3em;
+  display: block;
+  cursor: pointer;
+}
+
+/* Scroll bar COMMENT */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f5cb5c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e9ba3a;
+}
+
+/* PHOTOS AND TEXT SECTIONS COMMENT */
+.containerHome {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 50vw;
+  height: 100vh;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.text-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  background-color: #020305;
+  color: #020305;
+  height: 100vh;
+}
+
+h3 {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #f5f7f0;
+}
+
+/* FIGHTERS PAGE COMMENT */
+#fight-image {
+  height: 70vh;
+  background-color: #020305;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+#fight-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#head-stroke {
+  -webkit-text-stroke: 2px #020305;
+  margin-top: 0px;
+  animation: slideInDown 2s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  padding: 20px;
+}
+
+#container-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  background-color: #020305;
+  border: 2px solid #020305;
+  padding: 20px;
+  color: #f5f7f0;
+  animation: slideInDown 2s;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  animation: slideInDown 2s;
+}
+
+input[type="text"] {
+  margin-top: 20px;
+  padding: 20px;
+  margin-left: 20%;
+  width: 80%;
+  border: 2px solid #020305;
+  border-right: none;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+}
+
+#fighterButton {
+  margin-top: 20px;
+  padding: 20px;
+  width: 20%;
+  text-align: center;
+  margin-right: 20%;
+  font-size: 20px;
+}
+
+#fighterButton:hover {
+  background-color: #e9ba3a;
+  cursor: pointer;
+}
+
+.result {
+  color: #020305;
+  text-decoration: none;
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+  justify-content: space-between;
+  animation: slideInDown 2s;
+  background-color: #f5f7f0;
+}
+
+.results {
+  min-height: 100vh;
+}
+
+table {
+  border-collapse: separate;
+  border: 2px solid #020305;
+  margin-bottom: 20px;
+  margin-right: 0;
+  animation: slideInDown 2s;
+}
+
+tr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#table-container {
+  margin-left: 10%;
+  width: 80%;
+  background-color: #f5cb5c;
+  margin-top: 20px;
+}
+
+#snippet-flex {
+  margin-left: 150px;
+}
+
+.result-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 20px;
+  border: 2px solid #020305;
+  margin-bottom: 10px;
+}
+
+td {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+}
+
+div .result-grid > a {
+  text-decoration: none;
+  color: #020305;
+  font-size: 20px;
+}
+
+div .result-grid > a:hover {
+  text-decoration: underline;
+}
+div .result-grid > div {
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* RANKINGS PAGE COMMENT */
+#rank-image {
+  height: 80vh;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#rank-text {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rank-description {
+  color: #f5f7f0;
+  animation: slideInDown 2s;
+}
+
+#rankingsData {
+  margin-top: 2em;
+  padding: 20px;
+  width: 20%;
+  text-align: center;
+  font-size: 20px;
+  margin-right: 20%;
+  font-family: "Mukta Vaani", sans-serif;
+  transition: 0.3s ease;
+  border: 2px solid #020305;
+  background-color: #f5cb5c;
+  color: #020305;
+  cursor: pointer;
+  animation: slideInDown 2s;
+}
+
+#rankingsData:hover {
+  background-color: #e9ba3a;
+}
+
+#weight-box {
+  display: flex;
+}
+
+select {
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: 20%;
+  width: 1000px;
+  font-family: "News Cycle", sans-serif;
+  font-size: 20px;
+  border: 2px solid #020305;
+  border-right: none;
+  animation: slideInDown 2s;
+}
+
+#ranks {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: 20px;
+  margin-right: 20px;
+  animation: slideInDown 2s;
+}
+
+#weight-id {
+  border: 2px solid #020305;
+  margin: 10px 10px 10px 10px;
+  display: grid;
+  text-align: center;
+  padding: 10px;
+  background-color: #f5cb5c;
+  animation: slideInDown 2s;
+}
+
+.flex-ranks {
+  font-size: 20px;
+  color: #020305;
+  text-decoration: none;
+  animation: slideInDown 2s;
+}
+
+#url-underline {
+  height: 68px;
+}
+
+#url-underline:hover {
+  text-decoration: underline;
+}
+
+#bold-name {
+  font-weight: 700;
+  font-size: 25px;
+  background-color: #f5f7f0;
+}
+
+/* SCHEDULE PAGE COMMENT */
+
+/* Banner at top */
+#sched-image {
+  background-image: url(/FrontendProject/images/octagon-head.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+#sched-text {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#for-more-information {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 5px;
+  margin-top: 20px;
+  color: #f5f7f0;
+  animation: slideInDown 2s;
+}
+
+#for-more-information a {
+  color: #f5f7f0;
+}
+
+.head-text {
+  color: #f5f7f0;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  animation: slideInDown 2s;
+}
+
+.button-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+#scheduleData {
+  animation: slideInDown 2s;
+}
+
+#scheduleData:hover {
+  background-color: #e9ba3a;
+  cursor: pointer;
+}
+
+/* Loading icons */
+.preload {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#schedule {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.fight-event-boxes {
+  border: 2px solid #020305;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 30px;
+  animation: slideInDown 2s;
+}
+
+.fight-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fight-flex div {
+  margin: 20px 20px 0 20px;
+}
+
+/* FOOTER */
+footer {
+  width: 100vw;
+  height: 70px;
+  background-color: #262626;
+  color: #f5f7f0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.brand {
+  width: 100vw;
+  height: 70px;
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  background-color: #262626;
+  display: flex;
+  justify-content: space-between;
+}
+
+#copy {
+  margin-left: 10px;
+}
+
+.flex-terms {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.flex-terms a {
+  text-decoration: none;
+  color: #f5f7f0;
+}
+
+.flex-terms a:hover {
+  text-decoration: underline;
+}
+
+.brand a {
+  text-decoration: none;
+  color: #f5cb5c;
+  transition: 0.3s ease;
+}
+
+.brand a:hover {
+  color: #f5f7f0;
+}
+svg {
+  width: 50px;
+  height: 30px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+svg:hover {
+  fill: #f5cb5c;
+}
+
+/* MEDIA QUERIES  COMMENT*/
+
+@media screen and (max-width: 900px) {
+  /* Hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: 100%;
+    top: 60px;
+    /* top: 9%; */
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .navbar .nav-menu {
+    gap: 0;
+  }
+
+  .nav-position {
+    position: fixed;
+    left: 100%;
+    top: 174px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active,
+  .nav-position.active {
+    left: 0;
+  }
+
+  .nav-animation:after {
+    width: 0;
+  }
+
+  #hero-header {
+    font-size: 60px;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+
+  #hero-description {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .containerHome {
+    flex-direction: column;
+  }
+
+  #flex-reverse {
+    flex-direction: column-reverse;
+  }
+
+  img {
+    width: 100vw;
+  }
+
+  .text-style {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  #ranks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  h1 {
+    font-size: 70px;
+    margin-top: 0;
+  }
+
+  h1 + p {
+    font-size: 18px;
+  }
+
+  #for-more-information {
+    font-size: 18px;
+    margin: 0 100px;
+  }
+
+  #rankingsData {
+    font-size: 15px;
+    margin-top: 40px;
+  }
+
+  select {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #table-flex {
+    flex-direction: column;
+  }
+
+  tr {
+    flex-direction: column;
+  }
+
+  #snippet-flex {
+    margin-left: 0;
+  }
+
+  .result-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  #ranks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #container-yellow {
+    font-size: 15px;
+  }
+
+  #searchMe {
+    font-size: 15px;
+  }
+
+  #fighterButton {
+    font-size: 15px;
+  }
+
+  #head-stroke {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  #ranks {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  select {
+    margin-left: 30%;
+    height: 70px;
+    font-size: 15px;
+  }
+
+  #rankingsData {
+    margin-right: 30%;
+    height: 70px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #rank-description {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}

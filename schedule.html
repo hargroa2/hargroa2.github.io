@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Khand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- News Cycle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Mukta Vaani -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta+Vaani&display=swap"
+      rel="stylesheet"
+    />
+    <link defer rel="stylesheet" href="CSS/style.css" />
+    <title>Octagon</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar" id="grayNav">
+        <!-- Nav Tabs -->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="schedule.html" class="nav-link">SCHEDULE</a>
+          </li>
+        </ul>
+
+        <!-- Logo -->
+        <a href="index.html" id="nav-branding">OCTAGON</a>
+
+        <ul class="nav-menu nav-position">
+          <li class="nav-item">
+            <a href="rankings.html" class="nav-link">RANKINGS</a>
+          </li>
+          <li class="nav-item">
+            <a href="fighters.html" class="nav-link">FIGHTERS</a>
+          </li>
+        </ul>
+
+        <!-- Hamburger Bar -->
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <!--  -->
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div id="sched-image">
+        <div class="sched-text">
+          <h1 class="head-text">UPCOMING EVENTS</h1>
+          <p class="head-text container">
+            Curious about what UFC events are coming up? Click below for the
+            full schedule which updates on a regular basis. The schedule will
+            show each fight within the cards that are on the way, who's fighting
+            who, and what their betting odds are.
+          </p>
+          <p id="for-more-information">
+            For more information, click
+            <a href="https://www.ufc.com/events" target="_blank">here</a>
+            for the official UFC Events page
+          </p>
+          <div class="button-center">
+            <a id="scheduleData" class="button-style">Click for schedule</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="preload">
+        <div class="loadAnimation"></div>
+      </div>
+
+      <div id="schedule"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="brand">
+        <div id="nav-branding"><a href="index.html">OCTAGON</a></div>
+      </div>
+      <div class="copyright">
+        <div id="copy">©2022 Octagon, Inc. All Rights Reserved.</div>
+        <div class="glyphs">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="#f5f7f0"
+            >
+              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="#f5f7f0"
+            >
+              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="#f5f7f0"
+            >
+              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="flex-terms">
+          <div><a href="#">Terms of Service</a></div>
+          <div><a href="#">Terms of Service</a></div>
+        </div>
+      </div>
+    </footer>
+    <script defer src="JavaScript/schedule.js"></script>
+    <script type="text/javascript" src="JavaScript/config.js"></script>
+  </body>
+</html>
