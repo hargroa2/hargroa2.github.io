@@ -34,4 +34,4 @@ By Lee Brimelow - cropped from DSC_0029, CC BY 2.0, https://commons.wikimedia.or
 
 ## More Information
 
-If you want to find out more about what went behind this whirlwind of a project, check out my DEV article [here](https://google.com).
+If you want to find out more about what went behind this whirlwind of a project, check out my DEV article [here](https://dev.to/hargroa2/i-just-created-my-first-frontend-project-29l2).

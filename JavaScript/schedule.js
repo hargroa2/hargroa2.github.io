@@ -41,8 +41,6 @@ const ufcSchedule = async () => {
 
   const printFightCards = () => {
     for (let fight of Object.keys(json)) {
-      //UFC Fight Night: Ortega v. Rodriguez
-      //append div tag to body for each json
       const divCreate = document.createElement("div");
       divCreate.classList = "fight-event-boxes";
       schedContainer.append(divCreate);
@@ -54,29 +52,22 @@ const ufcSchedule = async () => {
       data.style.backgroundColor = "#f5cb5c";
       divCreate.append(data);
 
-      //append each p tag to the div tag
       for (let fighting of Object.keys(json[fight].fights)) {
-        //all 3 div tags need to be inside their own div tag
         const divForFight = document.createElement("div");
         divForFight.classList = "fight-flex";
         divCreate.append(divForFight);
 
-        //+127 (left side)
         const dataMoney1 = document.createElement("div");
         dataMoney1.innerText = json[fight].fights[fighting].moneyLine1;
-        // dataMoney1.style.width = "50px";
         divForFight.append(dataMoney1);
 
-        //Jesica Penne vs. Emily Ducote
         const dataFight = document.createElement("div");
         dataFight.innerText = json[fight].fights[fighting].description;
         dataFight.style.width = "400px";
         divForFight.append(dataFight);
 
-        //-154 (right side)
         const dataMoney2 = document.createElement("div");
         dataMoney2.innerText = json[fight].fights[fighting].moneyLine2;
-        // dataMoney2.style.width = "50px";
         divForFight.append(dataMoney2);
       }
     }
