@@ -1,6 +1,6 @@
 const rapidKey = config.RAPID_API_KEY;
 
-// ====== NAVIGATION ====== COMMENT
+// ====== NAVIGATION ======
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navPosition = document.querySelector(".nav-position");
@@ -18,7 +18,7 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 
-//====== API FETCH FOR RANKINGS ====== COMMENT
+//====== API FETCH FOR RANKINGS ======
 const rankButton = document.getElementById("rankingsData");
 const rankings = document.getElementById("ranks");
 
@@ -37,7 +37,7 @@ const ufcRankings = async () => {
   const json = await ufcData.json();
   loader.style.display = "none";
 
-  // ====== APPENDING DATA TO PAGE ====== COMMENT
+  // ====== APPENDING DATA TO PAGE ======
 
   const forEachClass = (index) => {
     const rank = document.getElementById("ranks");

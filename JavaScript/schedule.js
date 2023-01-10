@@ -1,6 +1,6 @@
 const rapidKey = config.RAPID_API_KEY;
 
-// ====== NAVIGATION ====== COMMENT
+// ====== NAVIGATION ======
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navPosition = document.querySelector(".nav-position");
@@ -18,7 +18,7 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 
-//====== API FETCH FOR SCHEDULE ====== COMMENT
+//====== API FETCH FOR SCHEDULE ======
 const schedButton = document.getElementById("scheduleData");
 
 const options = {

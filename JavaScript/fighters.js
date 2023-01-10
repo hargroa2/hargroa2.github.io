@@ -1,4 +1,4 @@
-// ====== NAVIGATION ====== COMMENT
+// ====== NAVIGATION ======
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navPosition = document.querySelector(".nav-position");
@@ -65,6 +65,7 @@ const displayResults = (results) => {
         </div>
       </div>
       `;
+
     searchResults.innerHTML = output;
   });
 };

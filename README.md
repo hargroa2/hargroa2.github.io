@@ -2,7 +2,7 @@
 
 ## Overview
 
-Octagon is a website dedicated to those who are fans of the Ultimate Fighting Championship, which an organization that coordinates the most Mixed Martial Arts events within the industry. With this site you can do the following:
+Octagon is a website dedicated to those who are fans of the Ultimate Fighting Championship, which is an organization that coordinates the most Mixed Martial Arts events within the industry. With this site you can do the following:
 
 - Check who is within the top 15 of the UFC's ranking system currently
 - Look at the upcoming Fight Nights and PPV events that are scheduled
